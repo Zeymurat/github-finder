@@ -7,7 +7,7 @@ export class Navbar extends Component {
             <nav className="navbar navbar-dark bg-primary">
                 <div className="container">
                     <a href="/" className="navbar-brand">
-                        <i className={this.props.icon}></i>{this.props.title}
+                        <i className={this.props.icon} style={{ marginRight: '7px' }}></i>{this.props.title}
                     </a>
                 </div>
             </nav>
