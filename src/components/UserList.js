@@ -2,15 +2,15 @@ import React from 'react'
 import User from './User';
 import Loading from './Loading';
 
-const UserList = (props) => {
+const UserList = ({loading, users}) => {
 
-        if (props.loading) {
+        if (loading) {
             return <Loading />
         }
         return (
 
             <div>
-                {props.users.map(user => (
+                {users.map(user => (
                     <User key={user.id} user={user} />
                 ))}
             </div>
